@@ -3,5 +3,8 @@ __pycache__/
 .venv/
 venv/
 data/*.xlsx
+index.html
+styles.css
+logo-indoamerica.png
 hero-cover.webp
 hero-background.mp4
