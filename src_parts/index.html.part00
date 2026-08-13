@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Congreso Internacional de Startups Indoamericano 2026. Innovación, inversión y conexiones globales en Ambato, Ecuador." />
+  <title>Congreso Internacional de Startups Indoamericano 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar" id="inicio">
+      <a class="brand brand-official" href="#inicio" aria-label="Universidad Indoamérica · Inicio">
+        <span class="brand-logo-wrap"><img src="logo-indoamerica.png" alt="Universidad Indoamérica"></span>
+        <span class="brand-event">STARTUPS 2026</span>
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a href="#congreso">Congreso</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#speakers">Speakers</a>
+        <a href="#firmas">Firmas</a>
+        <a href="#agenda">Agenda</a>
+        <a href="#inscripciones">Participa</a>
+      </nav>
+      <a class="btn btn-small btn-primary" href="#inscripciones">Inscríbete</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
+    </header>
+
+    <main>
+      <section class="hero hero-video">
+        <div class="hero-media" aria-hidden="true">
+          <video class="hero-video-bg" autoplay muted loop playsinline preload="metadata" poster="hero-cover.webp">
+            <source src="hero-background.mp4" type="video/mp4">
+          </video>
+          <div class="hero-video-overlay"></div>
+        </div>
+        <div class="hero-grid"></div>
+        <div class="hero-glow hero-glow-a"></div>
+        <div class="hero-glow hero-glow-b"></div>
+        <div class="hero-content">
+          <div class="eyebrow"><span></span> 28–29 OCT · AMBATO, ECUADOR</div>
+          <h1>Donde el talento, la innovación y el capital <em>se encuentran.</em></h1>
+          <p class="hero-lead">El Congreso Internacional de Startups Indoamericano conecta a startups, inversores, empresas, universidades y líderes de innovación de más de 20 países.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#inscripciones">Reservar mi lugar <span>↗</span></a>
+            <a class="btn btn-ghost" href="#congreso">Explorar el Congreso <span>↓</span></a>
+          </div>
+          <div class="hero-proof">
+            <div><strong>+100</strong><span>líderes del ecosistema</span></div>
+            <div><strong>20+</strong><span>países representados</span></div>
+            <div><strong>US$100M+</strong><span>capacidad de inversión*</span></div>
+          </div>
+        </div>
+        <aside class="event-card">
+          <div class="event-card-head">ECUADOR <span>2026</span></div>
+          <div class="event-date"><span>28</span><small>OCT</small><i>—</i><span>29</span><small>OCT</small></div>
+          <p>Universidad Indoamérica<br>Ambato, Ecuador</p>
+          <div class="event-card-line"></div>
+          <div class="event-tags"><span>Pitch</span><span>Networking</span><span>B2B</span><span>Inversión</span></div>
+          <img class="event-cover-thumb" src="hero-cover.webp" alt="Visual oficial del Congreso Internacional de Startups Indoamericano 2026">
+        </aside>
+        <div class="scroll-note">SCROLL TO CONNECT <span>↓</span></div>
+      </section>
+
+      <section class="ticker" aria-label="Áreas del congreso">
+        <div>STARTUPS <span>✦</span> INVERSIÓN <span>✦</span> INNOVACIÓN <span>✦</span> TECNOLOGÍA <span>✦</span> NETWORKING <span>✦</span> EMPRENDIMIENTO <span>✦</span></div>
+      </section>
+
+      <section class="section intro" id="congreso">
+        <div class="section-number">01 / EL CONGRESO</div>
+        <div class="intro-copy">
+          <div>
+            <p class="kicker">Una cita que conecta ecosistemas</p>
+            <h2>Ecuador se convierte en punto de encuentro de la innovación iberoamericana.</h2>
+          </div>
+          <div class="body-copy">
+            <p>Durante dos jornadas, actores clave del emprendimiento, la tecnología, la educación y la inversión se reúnen para generar oportunidades de negocio, construir alianzas estratégicas y acelerar proyectos con potencial global.</p>
+            <p>Una plataforma impulsada por la Asociación Internacional de Startups, Red Business Market y Universidad Indoamérica para conectar América Latina, Estados Unidos y Europa desde Ambato.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section impact">
+        <article class="impact-main">
+          <span class="mini-label">IMPACTO</span>
+          <h3>Conexiones que<br>mueven ideas.</h3>
+          <p>No vienes solo a escuchar. Vienes a conocer a quienes pueden impulsar tu próxima etapa.</p>
+        </article>
+        <article class="metric-card"><strong>100+</strong><span>Líderes, speakers e invitados</span></article>
+        <article class="metric-card"><strong>20+</strong><span>Países conectados en un solo lugar</span></article>
+        <article class="metric-card wide"><strong>2 días</strong><span>de contenido, negocios y networking de alto valor</span></article>
+      </section>
+
+      <section class="section experience" id="experiencia">
+        <div class="section-number">02 / LA EXPERIENCIA</div>
+        <div class="section-heading">
+          <p class="kicker">Mucho más que conferencias</p>
+          <h2>Un formato diseñado para aprender, conectar y hacer negocios.</h2>
+        </div>
+        <div class="experience-grid">
+          <article class="feature-card feature-dark"><b>01</b><h3>Conferencias magistrales</h3><p>Visiones globales sobre innovación, inversión, tecnología y nuevas oportunidades de mercado.</p><span>↗</span></article>
+          <article class="feature-card"><b>02</b><h3>Pitch de startups</h3><p>Proyectos con alto potencial presentan sus propuestas frente a inversores y actores del ecosistema.</p><span>↗</span></article>
+          <article class="feature-card"><b>03</b><h3>Rueda de negocios</h3><p>Encuentros enfocados en generar vínculos comerciales, inversión y cooperación internacional.</p><span>↗</span></article>
+          <article class="feature-card"><b>04</b><h3>Talleres y paneles</h3><p>Sesiones prácticas y conversaciones especializadas con referentes de distintos mercados.</p><span>↗</span></article>
+          <article class="feature-card feature-accent"><b>05</b><h3>Networking internacional</h3><p>Dos días para ampliar tu red con fundadores, empresas, academia, aceleradoras e inversores.</p><span>↗</span></article>
+          <article class="feature-card"><b>06</b><h3>Conexiones B2B</h3><p>Espacios para avanzar conversaciones concretas, alianzas y oportunidades de expansión.</p><span>↗</span></article>
+        </div>
+      </section>
+
+      <section class="audience-band">
+        <div class="section-number light">03 / ¿PARA QUIÉN?</div>
+        <div class="audience-content">
+          <h2>Si construyes el futuro,<br>este espacio es para ti.</h2>
+          <div class="audience-tags">
+            <span>STARTUPS</span><span>EMPRENDEDORES</span><span>INVERSORES</span><span>EMPRESAS</span><span>UNIVERSIDADES</span><span>ACELERADORAS</span><span>CENTROS DE INNOVACIÓN</span><span>INSTITUCIONES</span>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="section speakers" id="speakers">
+        <div class="section-number">04 / SPEAKERS</div>
+        <div class="section-heading speakers-head">
+          <div><p class="kicker">Voces que están moviendo el ecosistema</p><h2>Speakers internacionales confirmados.</h2></div>
+          <p class="agenda-note">Innovación, venture capital, tecnología, GovTech, internacionalización y emprendimiento reunidos en Ambato.</p>
+        </div>
+        <div class="speaker-grid">
+          <article class="speaker-card featured"><img class="speaker-photo" src="https://images.squarespace-cdn.com/content/v1/6a4893bfd3a53d73031dddf1/16ff3697-df53-4815-97de-464e10b30c6d/Cristina-Dolan.jpg" alt="Cristina Dolan" loading="lazy"><div class="speaker-meta"><span>EE. UU.</span><h3>Cristina Dolan</h3><p>Miembro del Forbes Technology Council · Presidenta MIT New York · ex IBM, Oracle, Disney y Hearst</p></div></article>
+          <article class="speaker-card featured"><img class="speaker-photo" src="https://images.squarespace-cdn.com/content/v1/6a4893bfd3a53d73031dddf1/0e41ccc9-a927-436f-81fd-86b5330eb80e/FabiaSilva.jpg" alt="Fabia Silva" loading="lazy"><div class="speaker-meta"><span>España</span><h3>Fabia Silva</h3><p>CEO de Dronak · MIT Alumni Entrepreneur Forum Spain · Talent Woman</p></div></article>
+          <article class="speaker-card"><img class="speaker-photo" src="https://images.squarespace-cdn.com/content/v1/6a4893bfd3a53d73031dddf1/099e48e6-3bc8-4995-9956-5e3da47266d3/images.jpeg" alt="Patricio Ovalle" loading="lazy"><div class="speaker-meta"><span>Chile</span><h3>Patricio Ovalle</h3><p>Senior Innovation Advisor BID · GovTech · ecosistemas emprendedores</p></div></article>
+          <article class="speaker-card"><img class="speaker-photo" src="https://images.squarespace-cdn.com/content/v1/6a4893bfd3a53d73031dddf1/fdf8a317-4ee2-425a-bb58-a5157ea24946/50e1de93-95bb-4d41-a622-d6cd4898f60d-1-737x1024.jpg" alt="Viviana Angulo" loading="lazy"><div class="speaker-meta"><span>Latinoamérica</span><h3>Viviana Angulo</h3><p>Inversora · Cofundadora Pista8 · Executive Forum Leader · WeInvest</p></div></article>
+          <article class="speaker-card"><img class="speaker-photo" src="https://images.squarespace-cdn.com/content/v1/6a4893bfd3a53d73031dddf1/2cb6fe17-88c1-4867-bff5-7b9887a27c93/625deb5ca3bb8d1df2403bff_andres-big.jpg" alt="Andrés Echecopar" loading="lazy"><div class="speaker-meta"><span>España</span><h3>Andrés Echecopar</h3><p>Managing Partner Bcombinator VC · CastiVentures · Venture Capital</p></div></article>
+          <article class="speaker-card"><img class="speaker-photo" src="https://images.squarespace-cdn.com/content/v1/6a4893bfd3a53d73031dddf1/1203f77a-6b8b-48a9-9599-e8d1d1d3fe9b/carlos%2Bcontreras.jpg" alt="Carlos Contreras" loading="lazy"><div class="speaker-meta"><span>España</span><h3>Carlos Contreras</h3><p>Director General 15K Angels · Cofundador Meta Ventures</p></div></article>
+          <article class="speaker-card"><img class="speaker-photo" src="https://images.squarespace-cdn.com/content/v1/6a4893bfd3a53d73031dddf1/82051dca-0895-4447-90a4-37bcb08adb86/4GBkx5PALVb9AbGzd4C5VXMXD3w.webp" alt="Sarah Golberg" loading="lazy"><div class="speaker-meta"><span>Uruguay</span><h3>Sarah Golberg</h3><p>Directora Ejecutiva URUCAP · ANII · Capital privado e innovación</p></div></article>
+          <article class="speaker-card"><img class="speaker-photo" src="https://images.squarespace-cdn.com/content/v1/6a4893bfd3a53d73031dddf1/9ce85222-e181-4c7d-9a24-c872c04ae77c/images%2B%281%29.jpeg" alt="Rodolfo Games" loading="lazy"><div class="speaker-meta"><span>Argentina</span><h3>Rodolfo Games</h3><p>Presidente APIA · Red Internacional de Parques Industriales · Profesor UTN</p></div></article>
+          <article class="speaker-card"><img class="speaker-photo" src="https://images.squarespace-cdn.com/content/v1/6a4893bfd3a53d73031dddf1/d352a09c-4134-4ff9-b739-23fc44c3c5c3/joacir.jpeg" alt="Joacir Alejandro Farias" loading="lazy"><div class="speaker-meta"><span>Bolivia</span><h3>Joacir Alejandro Farias</h3><p>Startups Bolivia · Venture Partner Imagine Ventures · innovación y venture capital</p></div></article>
