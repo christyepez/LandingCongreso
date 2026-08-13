@@ -1,0 +1,15 @@
+{
+  "schema": "cy-integrity-v2-expiring",
+  "payload_b64": "Q1ktMjAyNg==",
+  "expires_at": "2026-10-30T23:59:59-05:00",
+  "files": {
+    "index.html": "699b3477d9a12ab9a30618bd4209ef5da57480167a52923949013a7c035674ea",
+    "styles.css": "ae76150e2823638d80a6789056504ce0c44d4144f4d2f71fedc547af9483121b",
+    "script.js": "0f6cf850f2982a9c371a118960672f69ef5468807ae90b6d59543cff8c6304e4",
+    "server.py": "305c8bd0e93783d1ad9c3d5a9d6844eac4c6eee9a829fa489dae00bac01d592d",
+    "logo-indoamerica.png": "3bab5a961748f3817a80129a1ee923d2e2c440bbc0efcd82a41be2534e5bd18a",
+    "hero-cover.webp": "f039a6284191a1b0e41aaf5d1b6a5e85c8b15e12e488b44ae00dea3d7429c18d",
+    "hero-background.mp4": "d9362d12a28f21cbb50cc3dcd13daf3fd2f8c71b36a67c34663dc1453b5a61d7"
+  },
+  "signature_b64": "euz/OGyc/gbrr53HCeLsGJybhbhAoYCfuarjyMhDBoebGfaaNdpUdx0wJytq8qfpMYdjh6rawEcUcL+Jyn9sBw=="
+}
