@@ -1,0 +1,89 @@
+        <div class="registration-heading">
+          <div>
+            <p class="kicker">Inscripciones 2026</p>
+            <h2>Elige cómo quieres formar parte del Congreso.</h2>
+          </div>
+          <p>Completa tu inscripción general para asistir o postula tu startup para participar en las oportunidades de visibilidad, networking e inversión del Congreso.</p>
+        </div>
+
+        <div class="registration-switch" role="tablist" aria-label="Tipo de inscripción">
+          <button class="reg-tab active" type="button" data-target="generalForm" role="tab" aria-selected="true">
+            <span>01</span><strong>Asistente</strong><small>Inscripción general</small>
+          </button>
+          <button class="reg-tab" type="button" data-target="startupForm" role="tab" aria-selected="false">
+            <span>02</span><strong>Startup</strong><small>Postula tu proyecto</small>
+          </button>
+        </div>
+
+        <div class="registration-panels">
+          <form class="registration-form active" id="generalForm" novalidate>
+            <div class="form-title"><div><span>ASISTENTES</span><h3>Inscripción general</h3></div><p>Datos de la persona que asistirá al Congreso.</p></div>
+            <div class="form-grid">
+              <label><span>Nombres *</span><input name="nombres" type="text" autocomplete="given-name" required></label>
+              <label><span>Apellidos *</span><input name="apellidos" type="text" autocomplete="family-name" required></label>
+              <label><span>Correo electrónico *</span><input name="email" type="email" autocomplete="email" required></label>
+              <label><span>Teléfono / WhatsApp *</span><input name="telefono" type="tel" autocomplete="tel" required></label>
+              <label><span>País *</span><input name="pais" type="text" autocomplete="country-name" required></label>
+              <label><span>Ciudad *</span><input name="ciudad" type="text" autocomplete="address-level2" required></label>
+              <label><span>Empresa / Institución</span><input name="organizacion" type="text"></label>
+              <label><span>Cargo / Rol</span><input name="cargo" type="text"></label>
+              <label class="field-wide"><span>Perfil de participante *</span><select name="perfil" required><option value="">Selecciona una opción</option><option>Startup / Emprendedor</option><option>Inversor</option><option>Empresa</option><option>Universidad / Academia</option><option>Aceleradora / Incubadora</option><option>Institución pública</option><option>Estudiante</option><option>Otro</option></select></label>
+            </div>
+            <div class="consents">
+              <label class="check"><input name="acepta_datos" type="checkbox" required><span>Acepto el tratamiento y cesión de mis datos por parte de Universidad Indoamérica, Asociación Internacional de Startups y Red Business Market para comunicaciones relacionadas con información, formación, eventos y conexiones del ecosistema.</span></label>
+              <label class="check"><input name="acepta_imagen" type="checkbox" required><span>Autorizo la toma y uso de fotografías y vídeos en los que pueda aparecer durante el Congreso, dentro del marco de comunicación del evento.</span></label>
+            </div>
+            <button class="btn btn-primary form-submit" type="submit">Enviar inscripción <span>↗</span></button>
+            <p class="form-status" aria-live="polite"></p>
+          </form>
+
+          <form class="registration-form" id="startupForm" novalidate>
+            <div class="form-title"><div><span>STARTUPS</span><h3>Postula tu startup</h3></div><p>Cuéntanos sobre tu proyecto y el tipo de oportunidad que buscas.</p></div>
+            <div class="form-grid">
+              <label><span>Nombre de la startup *</span><input name="startup" type="text" required></label>
+              <label><span>Sitio web</span><input name="web" type="url" placeholder="https://"></label>
+              <label><span>Nombre del fundador / representante *</span><input name="fundador" type="text" required></label>
+              <label><span>Correo electrónico *</span><input name="email" type="email" required></label>
+              <label><span>Teléfono / WhatsApp *</span><input name="telefono" type="tel" required></label>
+              <label><span>País *</span><input name="pais" type="text" required></label>
+              <label><span>Sector *</span><select name="sector" required><option value="">Selecciona un sector</option><option>Fintech</option><option>Edtech</option><option>Healthtech</option><option>Agtech / Foodtech</option><option>Climate / Cleantech</option><option>Retail / E-commerce</option><option>SaaS / Software</option><option>IA / Data</option><option>Movilidad / Logística</option><option>Industria / IoT</option><option>Otro</option></select></label>
+              <label><span>Etapa *</span><select name="etapa" required><option value="">Selecciona una etapa</option><option>Idea / Pre-seed</option><option>MVP</option><option>Seed</option><option>Early growth</option><option>Growth / Scale-up</option></select></label>
+              <label><span>Año de creación</span><input name="anio" type="number" min="1990" max="2026"></label>
+              <label><span>Tamaño del equipo</span><input name="equipo" type="number" min="1"></label>
+              <label><span>¿Buscas inversión? *</span><select name="busca_inversion" required><option value="">Selecciona</option><option>Sí</option><option>No</option><option>Estamos evaluándolo</option></select></label>
+              <label><span>Capital que buscas (USD)</span><input name="capital" type="number" min="0" step="1000" placeholder="Ej. 250000"></label>
+              <label class="field-wide"><span>Describe tu startup *</span><textarea name="descripcion" rows="4" maxlength="700" required placeholder="Problema, solución, mercado y propuesta de valor."></textarea></label>
+              <label class="field-wide"><span>Tracción / principales métricas</span><textarea name="traccion" rows="3" maxlength="500" placeholder="Usuarios, clientes, ingresos, pilotos, crecimiento u otros hitos."></textarea></label>
+              <label class="field-wide"><span>¿Qué buscas en el Congreso? *</span><select name="objetivo" required><option value="">Selecciona una opción</option><option>Acceso a inversores</option><option>Pitch / visibilidad</option><option>Clientes y alianzas B2B</option><option>Internacionalización</option><option>Mentoría / aceleración</option><option>Networking</option></select></label>
+              <label class="field-wide"><span>Pitch deck / enlace de presentación</span><input name="pitch" type="url" placeholder="https://drive.google.com/... o https://..."></label>
+            </div>
+            <div class="consents">
+              <label class="check"><input name="acepta_datos" type="checkbox" required><span>Acepto el tratamiento y cesión de mis datos y los datos de la startup por parte de Universidad Indoamérica, Asociación Internacional de Startups y Red Business Market, incluyendo su posible compartición con redes de inversión, speakers y entidades participantes.</span></label>
+              <label class="check"><input name="acepta_imagen" type="checkbox" required><span>Autorizo la toma y uso de fotografías y vídeos en los que pueda aparecer durante el Congreso, dentro del marco de comunicación del evento.</span></label>
+            </div>
+            <button class="btn btn-primary form-submit" type="submit">Enviar postulación <span>↗</span></button>
+            <p class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+        <p class="registration-legal">Los registros se almacenan directamente en un archivo Excel local del sitio. Asistentes y startups se guardan en hojas separadas para facilitar su revisión y exportación.</p>
+      </section>
+
+      <section class="cta" id="registro">
+        <div class="cta-grid"></div>
+        <p class="kicker">28–29 OCTUBRE · AMBATO</p>
+        <h2>Tu próxima conexión<br>puede cambiarlo todo.</h2>
+        <p>Forma parte del Congreso Internacional de Startups Indoamericano 2026.</p>
+        <a class="btn btn-light" href="#inscripciones">Inscríbete ahora <span>↗</span></a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand brand-official" href="#inicio" aria-label="Universidad Indoamérica"><img class="footer-indo-logo" src="logo-indoamerica.png" alt="Universidad Indoamérica"><span class="brand-event">STARTUPS 2026</span></a>
+      <div class="footer-copy">Congreso Internacional de Startups Indoamericano · Ambato, Ecuador</div>
+      <a href="#inicio" class="back-top">VOLVER ARRIBA ↑</a>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
