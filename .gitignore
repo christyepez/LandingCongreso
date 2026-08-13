@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+data/*.xlsx
+hero-cover.webp
+hero-background.mp4
