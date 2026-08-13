@@ -1,0 +1,9 @@
+services:
+  congreso-startups:
+    build: .
+    container_name: congreso-startups-indoamericano
+    ports:
+      - "8088:8080"
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
