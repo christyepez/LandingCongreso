@@ -13,7 +13,7 @@ DATA_DIR = Path(os.getenv('DATA_DIR', BASE_DIR / 'data'))
 EXCEL_PATH = DATA_DIR / 'inscripciones_congreso.xlsx'
 LOCK = Lock()
 INTEGRITY_PATH = BASE_DIR / 'integrity.manifest.json'
-PUBLIC_KEY_B64 = 'izpzVlUDfMe/ud6hkeVn4ywtRz2dqD4oiDSAbxsdl98='
+PUBLIC_KEY_B64 = 'tPQ/KzuEGmInC2NLU/uKf5TSY1IIpUJG1jw1W/Wb35k='
 
 
 def verify_integrity():
