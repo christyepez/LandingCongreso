@@ -72,9 +72,11 @@ regForms.forEach(form => {
 /* =========================================================
    SQUARESPACE PHONE VALIDATION
    - Ecuador selected by default
-   - Lets Squarespace control +593 and the composite phone field
-   - Does not mask, truncate or block input while typing
-   - Validates Ecuador mobile numbers on blur and submit
+   - Squarespace controls the +593 prefix
+   - Visual mask is shown inside the field as a placeholder
+   - No external example/hint is rendered
+   - Input is never blocked, truncated or reformatted while typing
+   - Ecuador mobile numbers are validated on blur and submit
    ========================================================= */
 (function () {
   'use strict';
@@ -91,6 +93,7 @@ regForms.forEach(form => {
     'input[type="tel"]';
 
   const ECUADOR_MOBILE_REGEX = /^9\d{8}$/;
+  const ECUADOR_PLACEHOLDER = '9XX XXX XXX';
 
   function isEcuadorSelected(select) {
     if (!select) return true;
@@ -199,7 +202,7 @@ regForms.forEach(form => {
         error.style.marginTop = '6px';
         error.style.fontWeight = '600';
         error.style.lineHeight = '1.4';
-        error.textContent = 'Ingresa un celular ecuatoriano válido. Ejemplo: 982101189';
+        error.textContent = 'Ingresa un celular ecuatoriano válido de 9 dígitos.';
         wrapper.appendChild(error);
       }
     } else {
@@ -208,23 +211,18 @@ regForms.forEach(form => {
     }
   }
 
-  function addHint(input) {
-    const wrapper =
-      input.closest('.form-item.phone') ||
-      input.closest('.form-item') ||
-      input.parentElement;
-
-    if (!wrapper || wrapper.querySelector('.cy-phone-hint')) return;
-
-    const hint = document.createElement('div');
-    hint.className = 'cy-phone-hint';
-    hint.style.fontSize = '12px';
-    hint.style.color = '#64748b';
-    hint.style.marginTop = '6px';
-    hint.style.fontWeight = '500';
-    hint.style.lineHeight = '1.4';
-    hint.textContent = 'Ejemplo: 982101189 · 9 dígitos sin el 0 inicial';
-    wrapper.appendChild(hint);
+  function applyPhoneFieldPresentation(input, country) {
+    if (isEcuadorSelected(country)) {
+      input.setAttribute('inputmode', 'numeric');
+      input.setAttribute('autocomplete', 'tel-national');
+      input.setAttribute('placeholder', ECUADOR_PLACEHOLDER);
+      input.setAttribute('title', 'Celular Ecuador: 9 dígitos sin el 0 inicial');
+    } else {
+      input.setAttribute('inputmode', 'tel');
+      input.setAttribute('autocomplete', 'tel');
+      input.setAttribute('placeholder', 'Número de teléfono');
+      input.removeAttribute('title');
+    }
   }
 
   function configurePhoneInput(input) {
@@ -232,12 +230,9 @@ regForms.forEach(form => {
 
     input.dataset.cyPhoneValidation = '1';
 
-    // Do not set maxlength, pattern, masks or key handlers here.
-    // Squarespace owns the composite +593 phone control.
-    input.setAttribute('inputmode', 'numeric');
-    input.setAttribute('autocomplete', 'tel-national');
-
-    addHint(input);
+    // Keep Squarespace in full control of the composite phone input.
+    // No maxlength, pattern, masks, key handlers or value rewriting.
+    applyPhoneFieldPresentation(input, findCountrySelect(input));
 
     input.addEventListener('input', function () {
       const country = findCountrySelect(input);
@@ -273,14 +268,14 @@ regForms.forEach(form => {
     if (!event.target.matches || !event.target.matches(COUNTRY_SELECTOR)) return;
 
     const select = event.target;
-    if (isEcuadorSelected(select)) return;
-
     const phoneItem = select.closest('.form-item.phone');
-    if (!phoneItem) return;
 
-    phoneItem.querySelectorAll('input').forEach(input => {
-      setPhoneError(input, false);
-    });
+    if (phoneItem) {
+      phoneItem.querySelectorAll('input:not([type="hidden"])').forEach(input => {
+        applyPhoneFieldPresentation(input, select);
+        if (!isEcuadorSelected(select)) setPhoneError(input, false);
+      });
+    }
   });
 
   document.addEventListener('submit', function (event) {
