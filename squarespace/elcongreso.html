@@ -1,0 +1,1165 @@
+<style>
+/* ==========================================================
+   EL CONGRESO
+   Congreso Internacional de Startups Indoamericano
+   Squarespace compatible
+   ========================================================== */
+
+.cy-congress {
+  --purple: #3b235f;
+  --purple-2: #4b2e70;
+  --purple-3: #624780;
+  --deep: #170d28;
+  --deep-2: #211337;
+  --yellow: #ffd51f;
+
+  --white: #ffffff;
+  --bg: #f7f5f8;
+  --bg-soft: #f0edf3;
+
+  --text: #28242d;
+  --muted: #6d6871;
+
+  --border: rgba(59,35,95,.12);
+
+  width: 100%;
+  overflow: hidden;
+
+  font-family: inherit !important;
+}
+
+.cy-congress *,
+.cy-congress *::before,
+.cy-congress *::after {
+  box-sizing: border-box;
+}
+
+.cy-congress__container {
+  width: min(1720px, calc(100% - 64px));
+  margin: 0 auto;
+}
+
+/* ==========================================================
+   SHARED
+   ========================================================== */
+
+.cy-congress__eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 15px;
+  color: var(--purple);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+
+.cy-congress__eyebrow::before {
+  content: "";
+  width: 34px;
+  height: 3px;
+  flex: 0 0 auto;
+  background: var(--yellow);
+}
+
+.cy-congress__eyebrow--light {
+  color: var(--yellow);
+}
+
+.cy-congress__title {
+  margin: 0 !important;
+  color: var(--purple) !important;
+  font-family: inherit !important;
+  font-size: clamp(42px, 4.7vw, 72px) !important;
+  font-weight: 700 !important;
+  line-height: .96 !important;
+  letter-spacing: -.045em !important;
+}
+
+.cy-congress__lead {
+  margin: 0 !important;
+  color: var(--muted) !important;
+  font-size: 17px !important;
+  line-height: 1.68 !important;
+}
+
+.cy-congress__btn {
+  min-height: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 25px;
+  background: var(--purple);
+  border: 1px solid var(--purple);
+  color: #fff !important;
+  font-family: inherit !important;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none !important;
+  transition:
+    background .25s ease,
+    color .25s ease,
+    transform .25s ease;
+}
+
+.cy-congress__btn:hover {
+  background: var(--yellow);
+  border-color: var(--yellow);
+  color: var(--deep) !important;
+  transform: translateY(-2px);
+}
+
+.cy-congress__btn--outline {
+  background: transparent;
+  border-color: rgba(255,255,255,.40);
+  color: #fff !important;
+}
+
+.cy-congress__btn--outline:hover {
+  background: #fff;
+  border-color: #fff;
+  color: var(--purple) !important;
+}
+
+/* ==========================================================
+   HERO
+   ========================================================== */
+
+.cy-congress-hero {
+  position: relative;
+  min-height: 660px;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(
+      120deg,
+      var(--deep) 0%,
+      #281640 36%,
+      var(--purple) 100%
+    );
+  color: #fff;
+}
+
+.cy-congress-hero::after {
+  content: "";
+  position: absolute;
+  width: 620px;
+  height: 620px;
+  right: -230px;
+  top: -260px;
+  border: 1px solid rgba(255,213,31,.15);
+  border-radius: 50%;
+}
+
+.cy-congress-hero__inner {
+  position: relative;
+  z-index: 2;
+  width: min(1720px, calc(100% - 64px));
+  margin: 0 auto;
+  padding: 72px 0;
+  display: grid;
+  grid-template-columns: minmax(0,.92fr) minmax(480px,.88fr);
+  gap: 74px;
+  align-items: center;
+}
+
+/* ==========================================================
+   HERO COPY
+   ========================================================== */
+
+.cy-congress-hero__copy {
+  max-width: 760px;
+}
+
+.cy-congress-hero__copy .cy-congress__eyebrow {
+  color: var(--yellow);
+}
+
+.cy-congress-hero__title {
+  margin: 0 0 26px !important;
+  color: #fff !important;
+  font-family: inherit !important;
+  font-size: clamp(52px, 5.3vw, 86px) !important;
+  font-weight: 700 !important;
+  line-height: .93 !important;
+  letter-spacing: -.05em !important;
+}
+
+.cy-congress-hero__title span {
+  color: var(--yellow);
+}
+
+.cy-congress-hero__text {
+  max-width: 710px;
+  margin: 0 0 30px !important;
+  color: rgba(255,255,255,.80) !important;
+  font-size: 17px !important;
+  line-height: 1.65 !important;
+}
+
+.cy-congress-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+}
+
+/* ==========================================================
+   HERO ART PANEL
+   ========================================================== */
+
+.cy-congress-hero__art {
+  position: relative;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 34px;
+  background: #f7f5f8;
+  border: 1px solid rgba(255,255,255,.16);
+  box-shadow: 0 25px 60px rgba(0,0,0,.20);
+}
+
+.cy-congress-hero__art::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 5px;
+  background: var(--yellow);
+}
+
+.cy-congress-hero__art-inner {
+  width: 100%;
+  height: 100%;
+  min-height: 430px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.cy-congress-hero__art img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  display: block;
+  object-fit: contain !important;
+  object-position: center !important;
+  filter:
+    saturate(1.07)
+    contrast(1.02);
+}
+
+/* ==========================================================
+   STATS
+   ========================================================== */
+
+.cy-congress-stats {
+  background: var(--purple);
+}
+
+.cy-congress-stats__grid {
+  width: min(1720px, calc(100% - 64px));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  border-left: 1px solid rgba(255,255,255,.12);
+}
+
+.cy-congress-stat {
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 28px 34px;
+  border-right: 1px solid rgba(255,255,255,.12);
+}
+
+.cy-congress-stat__value {
+  color: var(--yellow);
+  font-size: clamp(34px,3vw,50px);
+  font-weight: 700;
+  line-height: .95;
+  letter-spacing: -.04em;
+}
+
+.cy-congress-stat__label {
+  max-width: 220px;
+  margin-top: 9px;
+  color: rgba(255,255,255,.68);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+/* ==========================================================
+   INTRO
+   ========================================================== */
+
+.cy-congress-intro {
+  padding: 90px 0;
+  background: #fff;
+}
+
+.cy-congress-intro__grid {
+  display: grid;
+  grid-template-columns: minmax(0,.72fr) minmax(0,1.08fr);
+  gap: 90px;
+  align-items: start;
+}
+
+.cy-congress-intro__left {
+  position: sticky;
+  top: 40px;
+}
+
+.cy-congress-intro__right {
+  max-width: 800px;
+}
+
+.cy-congress-intro__right p {
+  margin: 0 0 22px !important;
+  color: var(--muted) !important;
+  font-size: 16px !important;
+  line-height: 1.72 !important;
+}
+
+.cy-congress-intro__right p:first-child {
+  color: var(--text) !important;
+  font-size: 19px !important;
+  line-height: 1.62 !important;
+}
+
+/* ==========================================================
+   WHY / EXPERIENCE
+   ========================================================== */
+
+.cy-congress-why {
+  padding: 86px 0;
+  background: var(--bg);
+}
+
+.cy-congress-section-header {
+  display: grid;
+  grid-template-columns: minmax(0,1.05fr) minmax(320px,.55fr);
+  gap: 70px;
+  align-items: end;
+  margin-bottom: 42px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--border);
+}
+
+.cy-congress-section-header__intro {
+  margin: 0 !important;
+  color: var(--muted) !important;
+  font-size: 16px !important;
+  line-height: 1.65 !important;
+}
+
+.cy-congress-why__grid {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 20px;
+}
+
+.cy-congress-why-card {
+  position: relative;
+  min-height: 275px;
+  padding: 28px;
+  background: #fff;
+  border: 1px solid var(--border);
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease;
+}
+
+.cy-congress-why-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 22px 40px rgba(32,18,47,.08);
+}
+
+.cy-congress-why-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 48px;
+  height: 4px;
+  background: var(--yellow);
+}
+
+.cy-congress-why-card__number {
+  margin-bottom: 52px;
+  color: rgba(59,35,95,.40);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.cy-congress-why-card h3 {
+  margin: 0 0 12px !important;
+  color: var(--purple) !important;
+  font-family: inherit !important;
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  line-height: 1.15 !important;
+}
+
+.cy-congress-why-card p {
+  margin: 0 !important;
+  color: var(--muted) !important;
+  font-size: 14px !important;
+  line-height: 1.58 !important;
+}
+
+/* ==========================================================
+   ECOSYSTEM
+   ========================================================== */
+
+.cy-congress-ecosystem {
+  padding: 90px 0;
+  background: var(--deep);
+  color: #fff;
+}
+
+.cy-congress-ecosystem__grid {
+  display: grid;
+  grid-template-columns: minmax(0,.8fr) minmax(0,1.2fr);
+  gap: 80px;
+  align-items: center;
+}
+
+.cy-congress-ecosystem__copy h2 {
+  max-width: 680px;
+  margin: 0 0 22px !important;
+  color: #fff !important;
+  font-family: inherit !important;
+  font-size: clamp(42px,4.4vw,68px) !important;
+  font-weight: 700 !important;
+  line-height: .98 !important;
+  letter-spacing: -.04em !important;
+}
+
+.cy-congress-ecosystem__copy p {
+  max-width: 680px;
+  margin: 0 !important;
+  color: rgba(255,255,255,.68) !important;
+  font-size: 16px !important;
+  line-height: 1.65 !important;
+}
+
+.cy-congress-ecosystem__items {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 16px;
+}
+
+.cy-congress-ecosystem-card {
+  min-height: 180px;
+  padding: 25px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.045);
+}
+
+.cy-congress-ecosystem-card__number {
+  margin-bottom: 34px;
+  color: var(--yellow);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.cy-congress-ecosystem-card h3 {
+  margin: 0 0 8px !important;
+  color: #fff !important;
+  font-family: inherit !important;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+}
+
+.cy-congress-ecosystem-card p {
+  margin: 0 !important;
+  color: rgba(255,255,255,.62) !important;
+  font-size: 13.5px !important;
+  line-height: 1.5 !important;
+}
+
+/* ==========================================================
+   LOCATION / SEDE
+   ========================================================== */
+
+.cy-congress-location {
+  padding: 90px 0;
+  background: #ffffff;
+}
+
+.cy-congress-location__grid {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1.08fr)
+    minmax(520px, .92fr);
+  gap: 76px;
+  align-items: center;
+}
+
+.cy-congress-location__content {
+  max-width: 830px;
+}
+
+.cy-congress-location__content h2 {
+  margin: 0 0 28px !important;
+  color: var(--purple) !important;
+  font-family: inherit !important;
+  font-size: clamp(46px, 4.5vw, 72px) !important;
+  font-weight: 700 !important;
+  line-height: .98 !important;
+  letter-spacing: -.045em !important;
+}
+
+.cy-congress-location__content p {
+  max-width: 820px;
+  margin: 0 0 25px !important;
+  color: var(--muted) !important;
+  font-size: 17px !important;
+  line-height: 1.68 !important;
+}
+
+/* ==========================================================
+   LOCATION IMAGE
+   ========================================================== */
+
+.cy-congress-location__visual {
+  position: relative;
+  min-height: 520px;
+  overflow: hidden;
+  background: var(--deep);
+}
+
+.cy-congress-location__visual img {
+  position: absolute;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  display: block;
+  object-fit: cover !important;
+  object-position: center center !important;
+  transition: transform .6s ease;
+}
+
+.cy-congress-location__visual:hover img {
+  transform: scale(1.025);
+}
+
+.cy-congress-location__visual::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(23,13,40,0.03) 0%,
+      rgba(23,13,40,0.05) 32%,
+      rgba(23,13,40,0.35) 60%,
+      rgba(23,13,40,0.92) 100%
+    );
+  pointer-events: none;
+}
+
+.cy-congress-location__visual::before {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 5px;
+  background: var(--yellow);
+}
+
+.cy-congress-location__overlay {
+  position: absolute;
+  z-index: 4;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 42px 46px 38px;
+}
+
+.cy-congress-location__panel-label {
+  display: block;
+  margin-bottom: 15px;
+  color: var(--yellow);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.cy-congress-location__overlay h3 {
+  margin: 0 0 10px !important;
+  color: #ffffff !important;
+  font-family: inherit !important;
+  font-size: clamp(34px, 3vw, 48px) !important;
+  font-weight: 700 !important;
+  line-height: .95 !important;
+  letter-spacing: -.035em !important;
+}
+
+.cy-congress-location__overlay p {
+  margin: 0 !important;
+  color: rgba(255,255,255,.72) !important;
+  font-size: 16px !important;
+  line-height: 1.4 !important;
+}
+
+/* ==========================================================
+   CTA
+   ========================================================== */
+
+.cy-congress-cta {
+  position: relative;
+  padding: 88px 0;
+  overflow: hidden;
+  background: var(--purple);
+  color: #fff;
+}
+
+.cy-congress-cta::after {
+  content: "";
+  position: absolute;
+  width: 520px;
+  height: 520px;
+  right: -180px;
+  top: -210px;
+  border: 1px solid rgba(255,213,31,.18);
+  border-radius: 50%;
+}
+
+.cy-congress-cta__content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+}
+
+.cy-congress-cta h2 {
+  margin: 0 0 18px !important;
+  color: #fff !important;
+  font-family: inherit !important;
+  font-size: clamp(44px,5vw,74px) !important;
+  font-weight: 700 !important;
+  line-height: .96 !important;
+  letter-spacing: -.045em !important;
+}
+
+.cy-congress-cta p {
+  max-width: 700px;
+  margin: 0 0 28px !important;
+  color: rgba(255,255,255,.70) !important;
+  font-size: 16px !important;
+  line-height: 1.62 !important;
+}
+
+.cy-congress-cta__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+}
+
+/* ==========================================================
+   LARGE DESKTOP
+   ========================================================== */
+
+@media (min-width: 1500px) {
+  .cy-congress-location__visual {
+    min-height: 560px;
+  }
+}
+
+/* ==========================================================
+   LAPTOP
+   ========================================================== */
+
+@media (max-width: 1180px) {
+  .cy-congress__container,
+  .cy-congress-hero__inner,
+  .cy-congress-stats__grid {
+    width: min(1080px, calc(100% - 44px));
+  }
+
+  .cy-congress-hero__inner {
+    grid-template-columns: minmax(0,1fr) minmax(410px,.82fr);
+    gap: 45px;
+  }
+
+  .cy-congress-hero__art {
+    min-height: 450px;
+  }
+
+  .cy-congress-why__grid {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+
+  .cy-congress-location__grid {
+    grid-template-columns:
+      minmax(0,1fr)
+      minmax(430px,.9fr);
+    gap: 48px;
+  }
+
+  .cy-congress-location__visual {
+    min-height: 480px;
+  }
+}
+
+/* ==========================================================
+   TABLET
+   ========================================================== */
+
+@media (max-width: 900px) {
+  .cy-congress__container,
+  .cy-congress-hero__inner,
+  .cy-congress-stats__grid {
+    width: calc(100% - 36px);
+  }
+
+  .cy-congress-hero {
+    min-height: auto;
+  }
+
+  .cy-congress-hero__inner {
+    grid-template-columns: 1fr;
+    gap: 42px;
+    padding: 58px 0;
+  }
+
+  .cy-congress-hero__copy {
+    max-width: 760px;
+  }
+
+  .cy-congress-hero__art {
+    min-height: 430px;
+    padding: 24px;
+  }
+
+  .cy-congress-hero__art-inner {
+    min-height: 380px;
+  }
+
+  .cy-congress-stats__grid {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+
+  .cy-congress-stat:nth-child(2) {
+    border-right: 0;
+  }
+
+  .cy-congress-intro__grid,
+  .cy-congress-ecosystem__grid,
+  .cy-congress-section-header {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .cy-congress-intro__left {
+    position: static;
+  }
+
+  .cy-congress-location__grid {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  .cy-congress-location__content {
+    max-width: 760px;
+  }
+
+  .cy-congress-location__visual {
+    width: 100%;
+    min-height: 480px;
+  }
+}
+
+/* ==========================================================
+   MOBILE
+   ========================================================== */
+
+@media (max-width: 600px) {
+  .cy-congress__container,
+  .cy-congress-hero__inner,
+  .cy-congress-stats__grid {
+    width: calc(100% - 28px);
+  }
+
+  .cy-congress-hero__inner {
+    padding: 45px 0;
+  }
+
+  .cy-congress-hero__title {
+    font-size: clamp(43px,13vw,60px) !important;
+  }
+
+  .cy-congress-hero__text {
+    font-size: 15px !important;
+  }
+
+  .cy-congress-hero__actions,
+  .cy-congress-cta__actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .cy-congress__btn {
+    width: 100%;
+  }
+
+  .cy-congress-hero__art {
+    min-height: auto;
+    padding: 13px;
+  }
+
+  .cy-congress-hero__art-inner {
+    min-height: 0;
+    height: auto;
+  }
+
+  .cy-congress-hero__art img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+  }
+
+  .cy-congress-stats__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cy-congress-stat {
+    min-height: 115px;
+    padding: 22px 0;
+    border-right: 0;
+    border-bottom: 1px solid rgba(255,255,255,.12);
+  }
+
+  .cy-congress-intro,
+  .cy-congress-why,
+  .cy-congress-ecosystem,
+  .cy-congress-location,
+  .cy-congress-cta {
+    padding: 58px 0;
+  }
+
+  .cy-congress-why__grid,
+  .cy-congress-ecosystem__items {
+    grid-template-columns: 1fr;
+  }
+
+  .cy-congress-location__content h2 {
+    font-size: clamp(38px, 11vw, 50px) !important;
+  }
+
+  .cy-congress-location__content p {
+    font-size: 15px !important;
+  }
+
+  .cy-congress-location__visual {
+    min-height: 400px;
+  }
+
+  .cy-congress-location__overlay {
+    padding: 30px 25px 27px;
+  }
+
+  .cy-congress-location__overlay h3 {
+    font-size: 36px !important;
+  }
+}
+
+/* ==========================================================
+   SMALL MOBILE
+   ========================================================== */
+
+@media (max-width: 420px) {
+  .cy-congress-location__visual {
+    min-height: 350px;
+  }
+
+  .cy-congress-location__overlay {
+    padding: 25px 21px 23px;
+  }
+
+  .cy-congress-location__overlay h3 {
+    font-size: 32px !important;
+  }
+}
+</style>
+
+<div class="cy-congress">
+
+<!-- ========================================================
+     HERO
+     ======================================================== -->
+
+<section class="cy-congress-hero">
+  <div class="cy-congress-hero__inner">
+    <div class="cy-congress-hero__copy">
+      <div class="cy-congress__eyebrow cy-congress__eyebrow--light">
+        El Congreso
+      </div>
+      <h1 class="cy-congress-hero__title">
+        Ecuador conecta con el
+        <span>ecosistema global.</span>
+      </h1>
+      <p class="cy-congress-hero__text">
+        El Congreso Internacional de Startups Indoamericano
+        conecta emprendimiento, innovación, inversión,
+        universidad y empresa en una cita internacional
+        que tendrá a Ambato como punto de encuentro.
+      </p>
+      <div class="cy-congress-hero__actions">
+        <a class="cy-congress__btn" href="/inscripciones">Inscríbete →</a>
+        <a class="cy-congress__btn cy-congress__btn--outline" href="/ponentes">Conoce a los ponentes</a>
+      </div>
+    </div>
+
+    <div class="cy-congress-hero__art">
+      <div class="cy-congress-hero__art-inner">
+        <img
+          src="https://images.squarespace-cdn.com/content/v1/6a4893bfd3a53d73031dddf1/c95176c4-7a01-4652-9d90-aedd2c4f11d5/Congreso+octubre2026.jpeg?format=500w"
+          alt="Congreso Internacional Indoamericano de Startups"
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     STATS
+     ======================================================== -->
+
+<section class="cy-congress-stats">
+  <div class="cy-congress-stats__grid">
+    <div class="cy-congress-stat">
+      <span class="cy-congress-stat__value">+100</span>
+      <span class="cy-congress-stat__label">líderes del ecosistema emprendedor e innovador</span>
+    </div>
+    <div class="cy-congress-stat">
+      <span class="cy-congress-stat__value">20+</span>
+      <span class="cy-congress-stat__label">países conectados alrededor del Congreso</span>
+    </div>
+    <div class="cy-congress-stat">
+      <span class="cy-congress-stat__value">US$100M</span>
+      <span class="cy-congress-stat__label">capacidad movilizada de inversión entre firmas representadas</span>
+    </div>
+    <div class="cy-congress-stat">
+      <span class="cy-congress-stat__value">2 días</span>
+      <span class="cy-congress-stat__label">de innovación, inversión, conocimiento y conexiones</span>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     QUÉ ES EL CONGRESO
+     ======================================================== -->
+
+<section class="cy-congress-intro">
+  <div class="cy-congress__container">
+    <div class="cy-congress-intro__grid">
+      <div class="cy-congress-intro__left">
+        <div class="cy-congress__eyebrow">La iniciativa</div>
+        <h2 class="cy-congress__title">Un puente entre conocimiento, empresa e inversión.</h2>
+      </div>
+
+      <div class="cy-congress-intro__right">
+        <p>
+          El Congreso Internacional de Startups Indoamericano
+          es una iniciativa estratégica impulsada por la
+          Universidad Indoamérica junto a la Red Business Market
+          y la Asociación Internacional de Startups.
+        </p>
+        <p>
+          El encuentro conecta el ecosistema universitario con
+          startups, inversionistas, empresas, instituciones,
+          redes de innovación y organizaciones internacionales.
+        </p>
+        <p>
+          Esta alianza integra a Ecuador en una red global de
+          emprendimiento e innovación con conexiones en Europa,
+          América, África y otros mercados internacionales.
+        </p>
+        <p>
+          Ambato se convierte así en un escenario internacional
+          para generar alianzas, impulsar proyectos, atraer
+          inversión y fortalecer la internacionalización del
+          talento y los emprendimientos de Ecuador y la región.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     QUÉ ENCONTRARÁS
+     ======================================================== -->
+
+<section class="cy-congress-why">
+  <div class="cy-congress__container">
+    <header class="cy-congress-section-header">
+      <div>
+        <div class="cy-congress__eyebrow">La experiencia</div>
+        <h2 class="cy-congress__title">¿Qué encontrarás?</h2>
+      </div>
+      <p class="cy-congress-section-header__intro">
+        Un formato construido para transformar conocimiento
+        en conexiones, y conexiones en oportunidades reales.
+      </p>
+    </header>
+
+    <div class="cy-congress-why__grid">
+      <article class="cy-congress-why-card">
+        <div class="cy-congress-why-card__number">01</div>
+        <h3>Conferencias</h3>
+        <p>Líderes internacionales compartirán tendencias, experiencia y conocimiento sobre emprendimiento, innovación, tecnología e inversión.</p>
+      </article>
+
+      <article class="cy-congress-why-card">
+        <div class="cy-congress-why-card__number">02</div>
+        <h3>Paneles internacionales</h3>
+        <p>Conversaciones entre referentes de distintos mercados para comprender las oportunidades y desafíos del ecosistema iberoamericano.</p>
+      </article>
+
+      <article class="cy-congress-why-card">
+        <div class="cy-congress-why-card__number">03</div>
+        <h3>Startup Pitch</h3>
+        <p>Startups seleccionadas podrán presentar sus proyectos frente a inversionistas y actores internacionales.</p>
+      </article>
+
+      <article class="cy-congress-why-card">
+        <div class="cy-congress-why-card__number">04</div>
+        <h3>Networking</h3>
+        <p>Espacios para conectar emprendedores, fondos, universidades, empresas e instituciones.</p>
+      </article>
+
+      <article class="cy-congress-why-card">
+        <div class="cy-congress-why-card__number">05</div>
+        <h3>Encuentros B2B</h3>
+        <p>Reuniones enfocadas en generar relaciones, oportunidades comerciales y alianzas estratégicas.</p>
+      </article>
+
+      <article class="cy-congress-why-card">
+        <div class="cy-congress-why-card__number">06</div>
+        <h3>Capital e inversión</h3>
+        <p>Acceso a redes de inversión, venture capital, business angels y actores del ecosistema financiero.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     ECOSISTEMA
+     ======================================================== -->
+
+<section class="cy-congress-ecosystem">
+  <div class="cy-congress__container">
+    <div class="cy-congress-ecosystem__grid">
+      <div class="cy-congress-ecosystem__copy">
+        <div class="cy-congress__eyebrow cy-congress__eyebrow--light">Ecosistema internacional</div>
+        <h2>Diferentes actores. Un mismo punto de encuentro.</h2>
+        <p>El Congreso conecta a quienes crean nuevas ideas, quienes las financian, quienes las desarrollan y quienes pueden llevarlas a nuevos mercados.</p>
+      </div>
+
+      <div class="cy-congress-ecosystem__items">
+        <article class="cy-congress-ecosystem-card">
+          <div class="cy-congress-ecosystem-card__number">01</div>
+          <h3>Startups</h3>
+          <p>Proyectos, fundadores y equipos con potencial de crecimiento e internacionalización.</p>
+        </article>
+
+        <article class="cy-congress-ecosystem-card">
+          <div class="cy-congress-ecosystem-card__number">02</div>
+          <h3>Inversionistas</h3>
+          <p>Fondos, business angels y redes de capital vinculadas al ecosistema emprendedor.</p>
+        </article>
+
+        <article class="cy-congress-ecosystem-card">
+          <div class="cy-congress-ecosystem-card__number">03</div>
+          <h3>Empresas</h3>
+          <p>Organizaciones interesadas en innovación, nuevos modelos y colaboración con startups.</p>
+        </article>
+
+        <article class="cy-congress-ecosystem-card">
+          <div class="cy-congress-ecosystem-card__number">04</div>
+          <h3>Universidades</h3>
+          <p>Instituciones que conectan conocimiento, investigación, talento y emprendimiento.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     SEDE
+     ======================================================== -->
+
+<section class="cy-congress-location">
+  <div class="cy-congress__container">
+    <div class="cy-congress-location__grid">
+      <div class="cy-congress-location__content">
+        <div class="cy-congress__eyebrow">La sede</div>
+        <h2>Ambato, en el corazón<br>de Ecuador.</h2>
+        <p>
+          La Universidad Indoamérica será la sede académica y
+          organizadora del Congreso, convirtiendo a Ambato en
+          un punto de encuentro para actores nacionales e
+          internacionales del ecosistema de innovación.
+        </p>
+        <p>
+          La celebración del Congreso representa una oportunidad
+          para proyectar talento, investigación, emprendimiento
+          e innovación ecuatoriana hacia nuevos mercados y
+          conexiones internacionales.
+        </p>
+      </div>
+
+      <div class="cy-congress-location__visual">
+        <img
+          src="https://images.squarespace-cdn.com/content/v1/6a4893bfd3a53d73031dddf1/e8af491e-527c-4330-9c14-23ca99c2dd6f/Parque-tecnologico-AMB.jpeg?format=500w"
+          alt="Parque Tecnológico Universidad Indoamérica - Ambato"
+          loading="lazy"
+        >
+        <div class="cy-congress-location__overlay">
+          <span class="cy-congress-location__panel-label">28 y 29 de octubre de 2026</span>
+          <h3>Universidad<br>Indoamérica</h3>
+          <p>Ambato · Ecuador</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     CTA FINAL
+     ======================================================== -->
+
+<section class="cy-congress-cta">
+  <div class="cy-congress__container">
+    <div class="cy-congress-cta__content">
+      <div class="cy-congress__eyebrow cy-congress__eyebrow--light">Sé parte del Congreso</div>
+      <h2>Dos días. Un ecosistema de oportunidades.</h2>
+      <p>
+        Conecta con startups, líderes internacionales,
+        inversionistas, universidades y empresas que estarán
+        en Ambato los días 28 y 29 de octubre.
+      </p>
+      <div class="cy-congress-cta__actions">
+        <a class="cy-congress__btn" href="/inscripciones">Inscríbete →</a>
+        <a class="cy-congress__btn cy-congress__btn--outline" href="/agenda">Ver agenda</a>
+        <a class="cy-congress__btn cy-congress__btn--outline" href="/ponentes">Ver ponentes</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>
